@@ -288,7 +288,8 @@ railcllayer.drawTile = function(canvas, tilePoint, zoom) {
 
 //注記
 var xhr = new XMLHttpRequest();
-xhr.open('GET', 'http://cyberjapandata.gsi.go.jp/xyz/experimental_anno/style.js', false);
+//xhr.open('GET', 'http://cyberjapandata.gsi.go.jp/xyz/experimental_anno/style.js', false);
+xhr.open('GET', 'http://hwakui.github.io/vector-tile-experiment/annostyle.js', false);
 xhr.send(null);
 var stylejs = eval( "(" + xhr.responseText + ")" );
 
